@@ -1,4 +1,5 @@
 //Trabajo de potencias
+//Vuelvo a subir al git con carpeta
 
 import * as readlineSync from 'readline-sync';
 
