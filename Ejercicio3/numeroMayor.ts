@@ -8,7 +8,8 @@ let indice:number;
 
 let resultado:number=arregloNumeros[0];
 
-for(indice=0; indice<11 ; indice++){
+
+for(indice=0; indice<arregloNumeros.length ; indice++){
 
 	if(arregloNumeros[indice-1]<arregloNumeros[indice]){
 		
