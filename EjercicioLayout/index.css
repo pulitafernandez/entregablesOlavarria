@@ -1,0 +1,91 @@
+body{
+    padding: 25px;
+  }
+  .title {
+  color: #5C6AC4;
+  }
+  
+  .encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .encabezado1{
+    background-color: #AFDA67;
+    width:19%;
+    height: 100px;
+  }
+  
+  .encabezado2{
+    background-color: #757575;
+    width:79%;
+    height: 100px;
+  
+  }
+  
+  .segundoTotal{
+    background-color: #EBE6BF;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid #000000;
+  }
+  
+  .centro{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 305px;
+    justify-content:space-between;
+  }
+  
+  .izquierdo{
+    background-color: #B958E7;
+    width: 24%;
+    height: 305px;
+  }
+  .derecho{
+    width: 74%;
+    display: flex;
+    Flex-direction:column;
+  }
+  .derechoArriba{
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rosa{
+    background-color: #F551BA;
+    width: 49%;
+    height: 120px;
+  }
+  .celeste{
+    background-color: #4EACE6;
+    width: 49%;
+    height: 120px;
+  }
+  
+  
+  .derechoAbajo{
+    margin-top:10px;
+    height: 300px;
+    background-color: #FFB41D;
+  }
+  
+  .pie{
+    background-color: #43C0C0;
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    border: 2px dashed #000000;
+  }
+  
