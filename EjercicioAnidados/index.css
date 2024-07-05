@@ -1,0 +1,51 @@
+body{
+    padding: 25px;
+  }
+  .title {
+  color: #5C6AC4;
+  }
+
+  .encabezado{
+    padding-left: 20px;
+  }
+
+  .cuerpo{
+    padding-left: 20px;
+  }
+
+  div p{
+    color:blue;
+  }
+  
+  ul>li{
+    letter-spacing: 1px;
+  }
+  
+  .formulario{
+    color: green;
+  }
+  
+  .formulario:hover{
+    color: grey;
+    cursor: pointer;
+  }
+  p a{
+    color: #43C0C0;
+  }
+  
+  .clave:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  .clave:visited{
+    color: red;
+    font-style: italic;
+  }
+  
+  .clave2:visited{
+    color: rgb(255, 0, 200);
+    font-style: italic;
+  }
+  
