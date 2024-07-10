@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    border: 3px solid green;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .title {
+  color: #5C6AC4;
+  }
+  
+  
+  .derecha{
+    display:flex;
+    width:30%;
+    height: 150px;
+    background-color: #FA8071;
+    border: 3px solid black;
+    visibility: visible;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  .izquierda{
+    display:flex;
+    width:30%;
+    height: 150px;
+    background-color: #FA8071;
+    border: 3px solid black;
+    visibility: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
