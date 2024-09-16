@@ -1,0 +1,31 @@
+
+
+body{
+    padding: 25px;
+}
+.title {
+  color: #5C6AC4;
+}
+.h2{
+    padding: 20px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si es necesario */
+    gap: 16px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    padding: 16px;
+}
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+}
