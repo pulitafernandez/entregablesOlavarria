@@ -1,40 +1,31 @@
-export class Moto{
-    private patente:string;
-    private marca:string;
-    private modelo:string;
+import { Vehiculo } from "./Vehiculo";
 
+export class Moto extends Vehiculo{
+    private tipoCilindro:string;
+    private tipoMoto:string;
 
-    public constructor(patente:string,marca:string, modelo:string){
-        this.patente=patente;
-        this.marca=marca;
-        this.modelo=modelo;
+    public constructor(patente:string,marca:string, modelo:string, tipoCilindro:string, tipoMoto:string){
+        super(patente, marca, modelo)
+        this.tipoCilindro=tipoCilindro;
+        this.tipoMoto=tipoMoto;
 
     }
-    public getPatente():string{
-        return this.patente;
+    public getTipoCilindro():string{
+        return this.tipoCilindro;
     }
-    public getMarca():string{
-        return this.marca;
-    }
-    public getModelo():string{
-        return this.modelo;
+    public getTipoMoto():string{
+        return this.tipoMoto;
     }
 
-    public setPatente(patente:string):void{
-        this.patente=patente;
+    public setTipoCilindro(tipoCilindro:string):void{
+        this.tipoCilindro=tipoCilindro;
     }
-    public setMarca(marca:string):void{
-        this.marca=marca;
-    }
-    public setModelo(modelo:string):void{
-        this.modelo=modelo;
+    public setTipoMoto(tipoMoto:string):void{
+        this.tipoMoto=tipoMoto;
     }
 
-    //metodo para editar todos los campos de moto
-    public editarMoto(patente:string,marca:string,modelo:string):void{
-        if(patente!=""){
-            this.patente=patente;
-        }
+    //metodo para editar los campos marca y modelo de vehiculo, que son las protected. La patente establezco que no se deberia editar
+    public editarMoto(marca:string,modelo:string):void{
         if(marca!=""){
             this.marca=marca;
         }

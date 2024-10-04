@@ -7,12 +7,12 @@ var RegistroAutomotor_1 = require("./RegistroAutomotor");
 //creo el registro de olavarria
 var registroAutomotor = new RegistroAutomotor_1.RegistroAutomotor("Registro Olavarria", 11545);
 //creo los autos 
-var auto1 = new Auto_1.Auto("AB544CS", "Toyota", "Corolla");
-var auto2 = new Auto_1.Auto("AD721BG", "Fiat", "Cronos");
+var auto1 = new Auto_1.Auto("AB544CS", "Toyota", "Corolla", "Automatico");
+var auto2 = new Auto_1.Auto("AD721BG", "Fiat", "Cronos", "Manual");
 //creo una moto
-var moto1 = new Moto_1.Moto("EYO444", "Honda", "XR150");
+var moto1 = new Moto_1.Moto("EYO444", "Honda", "XR150", "110", "Croos");
 //creo un camion
-var camion1 = new Camion_1.Camion("AC555AC", "Mercedes Benz", "114SD");
+var camion1 = new Camion_1.Camion("AC555AC", "Mercedes Benz", "114SD", "Semi", true);
 //agrego los vehiculos cargados al registro
 registroAutomotor.agregarAuto(auto1);
 registroAutomotor.agregarAuto(auto2);
@@ -29,5 +29,7 @@ console.log(registroAutomotor.getAutos());
 //modifico los datos de la moto y la muestro de nuevo
 console.log(registroAutomotor.getMotos());
 //si paso algun campo vacio, deja el valor como estaba. Solo cambio el modelo (podria hacerlo con el setModelo directamente)
-moto1.editarMoto("", "Civic", "");
+moto1.editarMoto("Civic", "");
+console.log(registroAutomotor.getMotos());
+registroAutomotor.darBajaMoto("EYO444");
 console.log(registroAutomotor.getMotos());

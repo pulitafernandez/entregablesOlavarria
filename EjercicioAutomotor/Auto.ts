@@ -1,32 +1,20 @@
-export class Auto{
-    private patente:string;
-    private marca:string;
-    private modelo:string;
+import { Vehiculo } from "./Vehiculo";
 
-    public constructor(patente:string,marca:string, modelo:string){
-        this.patente=patente;
-        this.marca=marca;
-        this.modelo=modelo;
-    }
+export class Auto extends Vehiculo{
+    private tipo:string; //automatico o manual
 
-    public getPatente():string{
-        return this.patente;
-    }
-    public getMarca():string{
-        return this.marca;
-    }
-    public getModelo():string{
-        return this.modelo;
+
+    public constructor(patente:string,marca:string, modelo:string, tipo:string){
+        super(patente, marca, modelo);
+        this.tipo=tipo;
     }
 
-    public setPatente(patente:string):void{
-        this.patente=patente;
+    public getTipo():string{
+        return this.tipo;
     }
-    public setMarca(marca:string):void{
-        this.marca=marca;
-    }
-    public setModelo(modelo:string):void{
-        this.modelo=modelo;
+
+    public setTipo(tipo:string):void{
+        this.tipo=tipo;
     }
     
 }

@@ -1,32 +1,28 @@
-export class Camion{
-    private patente:string;
-    private marca:string;
-    private modelo:string;
+import { Vehiculo } from "./Vehiculo";
 
+export class Camion extends Vehiculo{
+    public tipoAcoplado: string;
+    private cajaVolcadora: boolean;
 
-    public constructor(patente:string,marca:string, modelo:string){
-        this.patente=patente;
-        this.marca=marca;
-        this.modelo=modelo;
-
+    public constructor(patente:string,marca:string, modelo:string, tipoAcoplado:string, cajaVolcadora:boolean){
+        super(patente, marca, modelo);
+        this.tipoAcoplado=tipoAcoplado;
+        this.cajaVolcadora=cajaVolcadora;
     }
-    public getPatente():string{
-        return this.patente;
+    
+    public getTipoAcoplado():string{
+        return this.tipoAcoplado;
     }
-    public getMarca():string{
-        return this.marca;
-    }
-    public getModelo():string{
-        return this.modelo;
+    public getCajaVolcadora():boolean{
+        return this.cajaVolcadora;
     }
 
-    public setPatente(patente:string):void{
-        this.patente=patente;
+    public setTipoAcoplado(tipoAcoplado:string):void{
+        this.tipoAcoplado=tipoAcoplado;
     }
-    public setMarca(marca:string):void{
-        this.marca=marca;
+    public setCajaVolcadora(cajaVolcadora:boolean):void{
+        this.cajaVolcadora=cajaVolcadora;
     }
-    public setModelo(modelo:string):void{
-        this.modelo=modelo;
-    }
+
+
 }

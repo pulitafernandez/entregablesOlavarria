@@ -1,20 +1,21 @@
 import { Auto } from './Auto';
 import { Moto } from './Moto';
 import { Camion } from './Camion';
+import { Vehiculo } from './Vehiculo';
 import { RegistroAutomotor } from './RegistroAutomotor';
 
 //creo el registro de olavarria
 const registroAutomotor = new RegistroAutomotor("Registro Olavarria", 11545);
 
 //creo los autos 
-const auto1 = new Auto("AB544CS", "Toyota", "Corolla");
-const auto2 = new Auto("AD721BG", "Fiat", "Cronos");
+const auto1 = new Auto("AB544CS", "Toyota", "Corolla", "Automatico");
+const auto2 = new Auto("AD721BG", "Fiat", "Cronos", "Manual");
 
 //creo una moto
-const moto1 = new Moto("EYO444","Honda", "XR150");
+const moto1 = new Moto("EYO444","Honda", "XR150", "110","Croos");
 
 //creo un camion
-const camion1 = new Camion("AC555AC", "Mercedes Benz", "114SD");
+const camion1 = new Camion("AC555AC", "Mercedes Benz", "114SD", "Semi", true);
 
 //agrego los vehiculos cargados al registro
 registroAutomotor.agregarAuto(auto1);
@@ -39,7 +40,11 @@ console.log(registroAutomotor.getAutos());
 //modifico los datos de la moto y la muestro de nuevo
 console.log(registroAutomotor.getMotos());
 //si paso algun campo vacio, deja el valor como estaba. Solo cambio el modelo (podria hacerlo con el setModelo directamente)
-moto1.editarMoto("","Civic","");
+moto1.editarMoto("Civic","");
+console.log(registroAutomotor.getMotos());
+
+//elimino la moto1 y muestro el listado de motos, en este caso queda vacio
+registroAutomotor.darBajaMoto("EYO444");
 console.log(registroAutomotor.getMotos());
 
 

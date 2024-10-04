@@ -52,15 +52,15 @@ var RegistroAutomotor = /** @class */ (function () {
     //eliminio vehiculos del registro: auto camion y moto
     RegistroAutomotor.prototype.darBajaAuto = function (patente) {
         this.autos = this.autos.filter(function (auto) { return auto.getPatente() !== patente; });
-        console.log("El auto de patente: " + patente + " fue dado de baja correctamente");
+        console.log("El auto de patente: " + patente + " fue dado de baja exitosamente");
     };
     RegistroAutomotor.prototype.darBajaCamion = function (patente) {
         this.camiones = this.camiones.filter(function (camion) { return camion.getPatente() !== patente; });
-        console.log("El camion de patente: " + patente + " fue dado de baja correctamente");
+        console.log("El camion de patente: " + patente + " fue dado de baja exitosamente");
     };
     RegistroAutomotor.prototype.darBajaMoto = function (patente) {
         this.motos = this.motos.filter(function (moto) { return moto.getPatente() !== patente; });
-        console.log("La moto de patente: " + patente + " fue dada de baja correctamente");
+        console.log("La moto de patente: " + patente + " fue dada de baja exitosamente");
     };
     return RegistroAutomotor;
 }());
